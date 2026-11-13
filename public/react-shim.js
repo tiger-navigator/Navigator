@@ -76,6 +76,17 @@
         if (vnode.type === "select") {
           setTimeout(() => { el.value = val; }, 0);
         }
+      } else if (k === "checked") {
+        el.checked = Boolean(val);
+        if (val) {
+          el.setAttribute("checked", "checked");
+        } else {
+          el.removeAttribute("checked");
+        }
+      } else if (k === "disabled") {
+        el.disabled = Boolean(val);
+        if (val) el.setAttribute("disabled", "disabled");
+        else el.removeAttribute("disabled");
       } else if (val !== false && val !== null && val !== undefined) {
         el.setAttribute(k, val);
       }
@@ -103,23 +114,44 @@
     // Preserve active input focus if typing
     const activeEl = document.activeElement;
     const activeTag = activeEl ? activeEl.tagName : null;
+    const activeId = activeEl && activeEl.id ? activeEl.id : null;
+    const activeName = activeEl ? activeEl.getAttribute("name") : null;
+    const activeDataField = activeEl ? activeEl.getAttribute("data-field") : null;
     const activePlaceholder = activeEl ? activeEl.getAttribute("placeholder") : null;
     const selStart = activeEl && activeEl.selectionStart !== undefined ? activeEl.selectionStart : null;
+    const selEnd = activeEl && activeEl.selectionEnd !== undefined ? activeEl.selectionEnd : null;
 
     hookIndex = 0;
     const tree = renderVNode(rootComponent);
     rootContainer.innerHTML = "";
     rootContainer.appendChild(tree);
 
-    if (activeTag && (activeTag === "INPUT" || activeTag === "TEXTAREA")) {
+    if (activeTag && (activeTag === "INPUT" || activeTag === "TEXTAREA" || activeTag === "SELECT")) {
       const candidates = rootContainer.querySelectorAll(activeTag);
+      let matched = null;
       for (let i = 0; i < candidates.length; i++) {
-        if (activePlaceholder && candidates[i].getAttribute("placeholder") === activePlaceholder) {
-          candidates[i].focus();
-          if (selStart !== null && candidates[i].setSelectionRange) {
-            try { candidates[i].setSelectionRange(selStart, selStart); } catch (e) {}
-          }
+        const c = candidates[i];
+        if (activeId && c.id === activeId) {
+          matched = c;
           break;
+        }
+        if (activeDataField && c.getAttribute("data-field") === activeDataField) {
+          matched = c;
+          break;
+        }
+        if (activeName && c.getAttribute("name") === activeName) {
+          matched = c;
+          break;
+        }
+        if (activePlaceholder && c.getAttribute("placeholder") === activePlaceholder) {
+          matched = c;
+          break;
+        }
+      }
+      if (matched) {
+        matched.focus();
+        if (selStart !== null && matched.setSelectionRange) {
+          try { matched.setSelectionRange(selStart, selEnd !== null ? selEnd : selStart); } catch (e) {}
         }
       }
     }
