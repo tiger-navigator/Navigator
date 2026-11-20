@@ -22,6 +22,119 @@ const INITIAL_DB = {
     capstoneTitle: "Youth Basketball Biomechanics & Injury Prevention Clinic",
     capstoneSummary: "Developing a 6-week dynamic warm-up and ankle/knee stability curriculum for UHS junior varsity and middle school basketball athletes, mentored by UofM Human Performance Lab staff."
   },
+  capstoneProposal: {
+    projectTitle: "Youth Basketball Biomechanics & Injury Prevention Clinic",
+    projectDescription: "A 6-week structured clinic delivering dynamic warm-up protocols and lower-extremity stability training (focusing on ankle and knee injury reduction) for UHS junior varsity and middle school student-athletes. The program includes baseline jump/landing assessments, weekly biomechanics coaching sessions, and a student-athlete take-home movement routine.",
+    goals: [
+      {
+        id: "goal_1",
+        description: "Design and validate a 6-week dynamic warm-up and neuromuscular jump-landing curriculum tailored for adolescent basketball players, incorporating force dissipation principles learned at the UofM Human Performance Lab.",
+        measure: "Curriculum reviewed and approved by UofM biomechanics mentor; 100% of weekly exercise progressions documented."
+      },
+      {
+        id: "goal_2",
+        description: "Conduct pre- and post-clinic functional movement screenings (focusing on valgus knee collapse and landing stability) for at least 15 participating UHS athletes to measure mechanical improvement.",
+        measure: "Quantitative comparison of pre/post landing error scoring; documented reduction in knee abduction angles."
+      },
+      {
+        id: "goal_3",
+        description: "Produce a comprehensive printed and digital coach/athlete clinic handbook and weekly exercise video demonstrations for UHS athletic programs to utilize in subsequent seasons.",
+        measure: "Publication of 24-page handbook and 6 demonstration video clips distributed to UHS coaches."
+      },
+      {
+        id: "goal_4",
+        description: "Present empirical findings, biomechanical data trends, and athlete feedback at the UHS Senior Capstone Showcase and submit the required recorded slidedeck and final poster.",
+        measure: "Successful presentation to UHS faculty evaluation panel and final Capstone medallion defense."
+      }
+    ],
+    postsecondaryConnection: "This Capstone directly advances my goal to pursue a Bachelor of Science in Exercise Science at the University of Memphis College of Health Sciences, leading to a career in strength and conditioning or sports physical therapy. It bridges classroom anatomy and physiology with hands-on lab instrumentation, coaching communication, and clinical movement assessment.",
+    timeline: [
+      {
+        id: "tl_aug",
+        month: "August 2026",
+        phase: "Project Conceptualization & Mentor Alignment",
+        deliverables: "Finalize UHS & UofM lab mentor agreements; outline IRB/safety protocol; draft initial Capstone proposal."
+      },
+      {
+        id: "tl_sep",
+        month: "September 2026",
+        phase: "Curriculum Design & Equipment Inventory",
+        deliverables: "Draft 6-week dynamic warm-up progressions; review exercise selection with UofM mentor; inventory resistance bands & cones."
+      },
+      {
+        id: "tl_oct",
+        month: "October 2026",
+        phase: "Official Proposal Defense & Baseline Prep",
+        deliverables: "Submit formal UHS Capstone Proposal; secure parental permission slips and athletic department clearance."
+      },
+      {
+        id: "tl_nov",
+        month: "November 2026",
+        phase: "Baseline Screening & Clinic Launch",
+        deliverables: "Administer pre-clinic jump-landing screenings for 15 JV athletes; launch Week 1–2 ankle/knee stability modules."
+      },
+      {
+        id: "tl_dec",
+        month: "December 2026",
+        phase: "Mid-Clinic Coaching & Midpoint Reflection",
+        deliverables: "Deliver Week 3–4 dynamic warm-up stations; collect midpoint athlete self-assessments; submit Weekly Reflection Log #4."
+      },
+      {
+        id: "tl_jan",
+        month: "January 2027",
+        phase: "Post-Holiday Resumption & Advanced Drills",
+        deliverables: "Deliver Week 5–6 high-intensity change-of-direction mechanics; record video demonstrations for digital manual."
+      },
+      {
+        id: "tl_feb",
+        month: "February 2027",
+        phase: "Post-Clinic Assessment & Data Synthesis",
+        deliverables: "Administer post-clinic movement screenings; compile comparative data tables and statistical charts with UofM lab mentor."
+      },
+      {
+        id: "tl_mar",
+        month: "March 2027",
+        phase: "Deliverable Production & Rehearsal",
+        deliverables: "Complete Coach/Athlete Handbook; design full-size Capstone Poster; record Capstone Slidedeck presentation."
+      },
+      {
+        id: "tl_apr",
+        month: "April 2027",
+        phase: "Formal Capstone Defense & Showcase",
+        deliverables: "Present at UHS Senior Capstone Defense Day; submit final portfolio and reflection dossier to Counselor Carter."
+      },
+      {
+        id: "tl_may",
+        month: "May 2027",
+        phase: "Program Archival & Senior Scholar Final Audit",
+        deliverables: "Archive clinic materials with UHS Athletic Department; verify Senior Scholar Capstone clearance."
+      }
+    ],
+    mentorSupport: {
+      uhsMentor: "Coach Davis (UHS Athletic Director) & Dr. M. Carter (Academic Counselor)\nRole & Support: Coordinate auxiliary gym access, oversee student-athlete safety clearances, and facilitate school-day schedule alignment.",
+      externalMentor: "Dr. Douglas Powell, PhD, CSCS (University of Memphis Human Performance & Biomechanics Lab)\nRole & Support: Mentorship on jump-landing screening protocols, force plate analytics, and exercise progression validation."
+    },
+    deliverables: {
+      additionalOutputs: "1. 24-page illustrated Coach & Athlete Clinic Manual with exercise progressions and cues.\n2. 6-part video library demonstrating dynamic warm-up drills and landing mechanics.\n3. Pre- and post-clinic comparative spreadsheet tracking athlete movement assessment scores."
+    },
+    resourceNeeds: "Materials needed: 20 resistance mini-bands ($40), 10 agility cones ($25), 2 tablet tripods for recording landing angles (borrowed from UHS Media Lab), and printed clinic handbooks ($35).\nTotal anticipated cost: ~$100.\nFunding and resource plan: Micro-grant request submitted to UHS Student Activity Fund; auxiliary gym space provided by UHS Athletics; biomechanics software and force plates on loan from UofM Human Performance Lab.",
+    transportation: {
+      mode: "self",
+      selfCredentials: {
+        driversLicense: true,
+        vehicleAccess: true,
+        autoInsurance: true
+      },
+      additionalInfo: "Personal vehicle used for bi-weekly travel between University High School campus and the UofM Student Recreation and Human Performance Center (1.2 miles)."
+    },
+    parentalApproval: {
+      status: "Yes",
+      explanation: ""
+    },
+    additionalInfo: "All clinic sessions are scheduled after 3:30 PM dismissal to ensure zero conflict with academic coursework or dual enrollment lecture schedules. Coach Davis will be on site in the auxiliary gymnasium during all student-athlete sessions.",
+    submissionStatus: "Draft In Progress",
+    lastUpdated: "Nov 13, 2026"
+  },
   academicRecords: {
     unweightedGpa: 3.45,
     weightedGpa: 3.72,
@@ -186,7 +299,45 @@ function loadState() {
   try {
     const saved = localStorage.getItem("tiger_navigator_v1");
     if (saved) {
-      return JSON.parse(saved);
+      const parsed = JSON.parse(saved);
+      return {
+        ...INITIAL_DB,
+        ...parsed,
+        studentProfiles: {
+          ...INITIAL_DB.studentProfiles,
+          ...(parsed.studentProfiles || {})
+        },
+        capstoneProposal: {
+          ...INITIAL_DB.capstoneProposal,
+          ...(parsed.capstoneProposal || {}),
+          goals: (parsed.capstoneProposal && Array.isArray(parsed.capstoneProposal.goals) && parsed.capstoneProposal.goals.length >= 3)
+            ? parsed.capstoneProposal.goals
+            : INITIAL_DB.capstoneProposal.goals,
+          timeline: (parsed.capstoneProposal && Array.isArray(parsed.capstoneProposal.timeline) && parsed.capstoneProposal.timeline.length > 0)
+            ? parsed.capstoneProposal.timeline
+            : INITIAL_DB.capstoneProposal.timeline,
+          mentorSupport: {
+            ...INITIAL_DB.capstoneProposal.mentorSupport,
+            ...((parsed.capstoneProposal && parsed.capstoneProposal.mentorSupport) || {})
+          },
+          deliverables: {
+            ...INITIAL_DB.capstoneProposal.deliverables,
+            ...((parsed.capstoneProposal && parsed.capstoneProposal.deliverables) || {})
+          },
+          transportation: {
+            ...INITIAL_DB.capstoneProposal.transportation,
+            ...((parsed.capstoneProposal && parsed.capstoneProposal.transportation) || {}),
+            selfCredentials: {
+              ...INITIAL_DB.capstoneProposal.transportation.selfCredentials,
+              ...((parsed.capstoneProposal && parsed.capstoneProposal.transportation && parsed.capstoneProposal.transportation.selfCredentials) || {})
+            }
+          },
+          parentalApproval: {
+            ...INITIAL_DB.capstoneProposal.parentalApproval,
+            ...((parsed.capstoneProposal && parsed.capstoneProposal.parentalApproval) || {})
+          }
+        }
+      };
     }
   } catch (e) {
     console.warn("Could not read localStorage", e);
@@ -319,6 +470,8 @@ function TigerNavigatorApp() {
 
   // AI chat input
   const [chatInput, setChatInput] = useState("");
+  // Capstone sub-tab state
+  const [capstoneSubTab, setCapstoneSubTab] = useState("proposal"); // "proposal" | "timeline" | "reflections" | "ai_guide"
   // New experience form
   const [newExpTitle, setNewExpTitle] = useState("");
   const [newExpType, setNewExpType] = useState("Capstone Activity");
@@ -332,6 +485,180 @@ function TigerNavigatorApp() {
   function showNotification(msg) {
     setToast(msg);
     setTimeout(() => setToast(null), 3200);
+  }
+
+  function updateCapstoneField(field, val) {
+    setDb(prev => {
+      const updatedProposal = {
+        ...prev.capstoneProposal,
+        [field]: val,
+        lastUpdated: new Date().toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })
+      };
+      const updated = {
+        ...prev,
+        capstoneProposal: updatedProposal
+      };
+      if (field === "projectTitle") {
+        updated.studentProfiles = { ...updated.studentProfiles, capstoneTitle: val };
+      }
+      if (field === "projectDescription") {
+        updated.studentProfiles = { ...updated.studentProfiles, capstoneSummary: val };
+      }
+      return updated;
+    });
+  }
+
+  function handleAddGoal() {
+    setDb(prev => {
+      const goals = prev.capstoneProposal.goals || [];
+      const newGoal = {
+        id: `goal_${Date.now()}`,
+        description: "",
+        measure: ""
+      };
+      return {
+        ...prev,
+        capstoneProposal: {
+          ...prev.capstoneProposal,
+          goals: [...goals, newGoal]
+        }
+      };
+    });
+    showNotification("New goal added. Minimum of 3 goals required.");
+  }
+
+  function handleRemoveGoal(index) {
+    if ((db.capstoneProposal.goals || []).length <= 3) {
+      showNotification("A minimum of 3 goals is required by UHS Capstone policy.");
+      return;
+    }
+    setDb(prev => ({
+      ...prev,
+      capstoneProposal: {
+        ...prev.capstoneProposal,
+        goals: prev.capstoneProposal.goals.filter((_, i) => i !== index)
+      }
+    }));
+    showNotification("Goal removed. Minimum of 3 goals maintained.");
+  }
+
+  function handleUpdateGoal(index, key, val) {
+    setDb(prev => ({
+      ...prev,
+      capstoneProposal: {
+        ...prev.capstoneProposal,
+        goals: prev.capstoneProposal.goals.map((g, i) => i === index ? { ...g, [key]: val } : g)
+      }
+    }));
+  }
+
+  function handleUpdateTimeline(index, key, val) {
+    setDb(prev => ({
+      ...prev,
+      capstoneProposal: {
+        ...prev.capstoneProposal,
+        timeline: prev.capstoneProposal.timeline.map((item, i) => i === index ? { ...item, [key]: val } : item)
+      }
+    }));
+  }
+
+  function handleAddTimelineMonth() {
+    setDb(prev => {
+      const currentList = prev.capstoneProposal.timeline || [];
+      const newMonth = {
+        id: `tl_${Date.now()}`,
+        month: "Custom Month / Summer",
+        phase: "Project Phase & Focus Activities",
+        deliverables: "Deliverable Milestones & Deadlines"
+      };
+      return {
+        ...prev,
+        capstoneProposal: {
+          ...prev.capstoneProposal,
+          timeline: [...currentList, newMonth]
+        }
+      };
+    });
+    showNotification("New month added to Capstone timeline.");
+  }
+
+  function handleRemoveTimelineMonth(index) {
+    setDb(prev => ({
+      ...prev,
+      capstoneProposal: {
+        ...prev.capstoneProposal,
+        timeline: prev.capstoneProposal.timeline.filter((_, i) => i !== index)
+      }
+    }));
+    showNotification("Timeline month removed.");
+  }
+
+  function handleUpdateTransport(mode) {
+    setDb(prev => ({
+      ...prev,
+      capstoneProposal: {
+        ...prev.capstoneProposal,
+        transportation: {
+          ...prev.capstoneProposal.transportation,
+          mode
+        }
+      }
+    }));
+  }
+
+  function handleToggleTransportCredential(credKey) {
+    setDb(prev => ({
+      ...prev,
+      capstoneProposal: {
+        ...prev.capstoneProposal,
+        transportation: {
+          ...prev.capstoneProposal.transportation,
+          selfCredentials: {
+            ...prev.capstoneProposal.transportation.selfCredentials,
+            [credKey]: !prev.capstoneProposal.transportation.selfCredentials[credKey]
+          }
+        }
+      }
+    }));
+  }
+
+  function handleUpdateTransportInfo(val) {
+    setDb(prev => ({
+      ...prev,
+      capstoneProposal: {
+        ...prev.capstoneProposal,
+        transportation: {
+          ...prev.capstoneProposal.transportation,
+          additionalInfo: val
+        }
+      }
+    }));
+  }
+
+  function handleUpdateParentApproval(status, explanation) {
+    setDb(prev => ({
+      ...prev,
+      capstoneProposal: {
+        ...prev.capstoneProposal,
+        parentalApproval: {
+          status: status !== undefined ? status : prev.capstoneProposal.parentalApproval.status,
+          explanation: explanation !== undefined ? explanation : prev.capstoneProposal.parentalApproval.explanation
+        }
+      }
+    }));
+  }
+
+  function handleUpdateMentor(mentorKey, val) {
+    setDb(prev => ({
+      ...prev,
+      capstoneProposal: {
+        ...prev.capstoneProposal,
+        mentorSupport: {
+          ...prev.capstoneProposal.mentorSupport,
+          [mentorKey]: val
+        }
+      }
+    }));
   }
 
   function resetDemoData() {
@@ -452,7 +779,7 @@ function TigerNavigatorApp() {
     { id: "plan", label: "My Plan" },
     { id: "de_grant", label: "Dual Enrollment" },
     { id: "scholar", label: "Senior Scholar" },
-    { id: "capstone_ai", label: "Capstone & Reflection" }
+    { id: "capstone_ai", label: "Senior Capstone" }
   ];
   if (db.currentUser.role === "educator") {
     navItems.push({ id: "educator", label: "Rule Admin" });
@@ -636,10 +963,10 @@ function TigerNavigatorApp() {
         e("div", { className: "workspace-card", onClick: () => setActiveTab("capstone_ai") },
           e("div", null,
             e("div", { className: "workspace-step" }, "04 · CREATE & REFLECT"),
-            e("h3", null, "Capstone Proposal & AI Guide"),
-            e("p", null, "Your basketball biomechanics project, work-based learning log, AI-recognized competencies, and grounded Program of Studies Q&A.")
+            e("h3", null, "Senior Capstone Experience"),
+            e("p", null, "Complete your official UHS proposal, month-by-month timeline, mentor alignment, and fieldwork reflection log.")
           ),
-          e("span", { className: "workspace-link" }, "Open Capstone & AI reflection →")
+          e("span", { className: "workspace-link" }, "Open Senior Capstone proposal →")
         )
       ),
 
@@ -1236,183 +1563,936 @@ function TigerNavigatorApp() {
     );
   }
 
-  // Render View 5: Capstone Proposal, Experience Tracking & AI-Guided Reflection (Core Features 2.B & 2.F)
+  // Render View 5: Senior Capstone Experience (Reworked to Match UHS 2-Page Official Proposal PDF)
   function renderCapstoneAndAi() {
-    return e("div", null,
-      e("div", { className: "section-header" },
-        e("div", null,
-          e("h2", { style: { fontSize: "1.6rem" } }, "Capstone Proposal & AI-Guided Reflection"),
-          e("p", { style: { color: "var(--text-muted)", fontSize: "0.92rem" } },
-            "Develop your Senior Capstone, log internships & work-based learning, review AI-recognized competencies, and ask the Program of Studies guide."
-          )
-        )
-      ),
+    const proposal = db.capstoneProposal || INITIAL_DB.capstoneProposal;
+    const goals = proposal.goals || [];
+    const timeline = proposal.timeline || [];
+    const transport = proposal.transportation || { mode: "self", selfCredentials: {}, additionalInfo: "" };
+    const parentalApproval = proposal.parentalApproval || { status: "Yes", explanation: "" };
+    const mentors = proposal.mentorSupport || { uhsMentor: "", externalMentor: "" };
+    const deliverables = proposal.deliverables || { additionalOutputs: "" };
 
-      e("div", { className: "grid-2" },
-        // Left Column: Capstone Proposal Draft + Experience Log
-        e("div", null,
-          e("div", { className: "card-panel" },
-            e("div", { className: "card-panel-header" },
-              e("h3", null, "02 · CREATE — Capstone Proposal Draft"),
-              e("span", { className: "badge badge-navy" }, "Sport & Human Performance")
+    // Sub-render 1: Official Proposal Form (PDF Rework)
+    function renderOfficialProposalForm() {
+      return e("div", { className: "capstone-form-wrap" },
+        // PDF PAGE 1
+        e("div", { className: "capstone-form-card" },
+          // Section 1: Project Title
+          e("div", { className: "capstone-section-bar" },
+            e("h3", null,
+              e("span", null, "Project Title:"),
+              e("span", { className: "subprompt" }, "(A concise, descriptive title for your Capstone Experience).")
             ),
-            e("div", { className: "form-group" },
-              e("label", null, "Capstone Project Title"),
+            e("span", { className: "badge badge-navy", style: { background: "rgba(255,255,255,0.2)", color: "#fff" } }, "UHS Official Section")
+          ),
+          e("div", { className: "capstone-section-content" },
+            e("div", { className: "form-group", style: { marginBottom: 0 } },
               e("input", {
+                id: "capstone_projectTitle",
+                dataField: "projectTitle",
                 type: "text",
                 className: "form-control",
-                value: db.studentProfiles.capstoneTitle,
-                onChange: ev => setDb(p => ({ ...p, studentProfiles: { ...p.studentProfiles, capstoneTitle: ev.target.value } }))
-              })
-            ),
-            e("div", { className: "form-group" },
-              e("label", null, "Project Scope, Goals & Community Impact"),
-              e("textarea", {
-                className: "form-control",
-                value: db.studentProfiles.capstoneSummary,
-                onChange: ev => setDb(p => ({ ...p, studentProfiles: { ...p.studentProfiles, capstoneSummary: ev.target.value } }))
+                style: { fontWeight: "600", fontSize: "1.05rem" },
+                placeholder: "e.g., Youth Basketball Biomechanics & Injury Prevention Clinic",
+                value: proposal.projectTitle || "",
+                onChange: ev => updateCapstoneField("projectTitle", ev.target.value)
               })
             )
-          ),
+          )
+        ),
 
-          // Competency Recognition (Student review & correction of AI-generated interpretations)
-          e("div", { className: "card-panel" },
-            e("div", { className: "card-panel-header" },
-              e("div", null,
-                e("h3", null, "AI-Recognized Strengths & Competencies"),
-                e("p", { style: { fontSize: "0.82rem", color: "var(--text-muted)" } },
-                  "Review and edit AI-generated interpretations of your recurring skills (Feature 2.B)."
+        // Section 2: Project Description
+        e("div", { className: "capstone-form-card" },
+          e("div", { className: "capstone-section-bar" },
+            e("h3", null,
+              e("span", null, "Project Description:"),
+              e("span", { className: "subprompt" }, "(Provide a detailed explanation of your project, including key activities and objectives).")
+            )
+          ),
+          e("div", { className: "capstone-section-content" },
+            e("div", { className: "form-group", style: { marginBottom: 0 } },
+              e("textarea", {
+                id: "capstone_projectDescription",
+                dataField: "projectDescription",
+                className: "form-control",
+                style: { minHeight: "110px", lineHeight: "1.5" },
+                placeholder: "Provide a detailed explanation of your project, including key activities, timeline context, and target population...",
+                value: proposal.projectDescription || "",
+                onChange: ev => updateCapstoneField("projectDescription", ev.target.value)
+              })
+            )
+          )
+        ),
+
+        // Section 3: Goals & Expected Outcomes (At least 3 required)
+        e("div", { className: "capstone-form-card" },
+          e("div", { className: "capstone-section-bar" },
+            e("h3", null,
+              e("span", null, "Goals & Expected Outcomes:"),
+              e("span", { className: "subprompt" }, "(At least 3. Describe what you aim to achieve and how success will be measured).")
+            ),
+            e("div", { style: { display: "flex", alignItems: "center", gap: "0.5rem" } },
+              e("span", {
+                className: `badge ${goals.length >= 3 ? "badge-success" : "badge-warning"}`,
+                style: { fontSize: "0.78rem" }
+              }, `${goals.length} Goals Defined · ${goals.length >= 3 ? "Min. 3 Met ✓" : "Minimum 3 Required"}`),
+              e("button", {
+                type: "button",
+                className: "btn btn-outline",
+                style: { padding: "0.3rem 0.75rem", fontSize: "0.8rem", background: "#ffffff", borderColor: "#ffffff", color: "var(--uhs-navy)" },
+                onClick: handleAddGoal
+              }, "+ Add Goal")
+            )
+          ),
+          e("div", { className: "capstone-section-content" },
+            e("p", { style: { fontSize: "0.85rem", color: "var(--text-muted)", marginBottom: "1rem" } },
+              "UHS Policy Requirement: Every Capstone proposal must define a minimum of 3 goals with clear methods for measuring success. You may add additional goals to match the depth of your experience."
+            ),
+            goals.map((g, idx) =>
+              e("div", { key: g.id || idx, className: "capstone-goal-card" },
+                e("div", { className: "capstone-goal-header" },
+                  e("div", { style: { display: "flex", alignItems: "center", gap: "0.5rem" } },
+                    e("span", { className: "goal-badge" }, `Goal ${idx + 1}`),
+                    e("strong", { style: { fontSize: "0.92rem" } }, `Goal & Measurable Outcome #${idx + 1}`)
+                  ),
+                  goals.length > 3
+                    ? e("button", {
+                        type: "button",
+                        className: "btn btn-subtle",
+                        style: { color: "var(--danger)", padding: "0.2rem 0.55rem", fontSize: "0.78rem" },
+                        onClick: () => handleRemoveGoal(idx)
+                      }, "✕ Remove Goal")
+                    : e("span", {
+                        className: "badge badge-navy",
+                        style: { fontSize: "0.74rem" }
+                      }, "Required (Policy Min. 3)")
+                ),
+                e("div", { className: "form-group" },
+                  e("label", null, "What you aim to achieve (Goal statement & scope):"),
+                  e("textarea", {
+                    id: `goal_desc_${idx}`,
+                    dataField: `goal_desc_${idx}`,
+                    className: "form-control",
+                    style: { minHeight: "70px" },
+                    placeholder: `Describe Goal ${idx + 1} and what you plan to accomplish...`,
+                    value: g.description || "",
+                    onChange: ev => handleUpdateGoal(idx, "description", ev.target.value)
+                  })
+                ),
+                e("div", { className: "form-group", style: { marginBottom: 0 } },
+                  e("label", null, "How success will be measured (Quantitative or qualitative evidence):"),
+                  e("input", {
+                    id: `goal_measure_${idx}`,
+                    dataField: `goal_measure_${idx}`,
+                    type: "text",
+                    className: "form-control",
+                    placeholder: "e.g., Pre/post assessment rubric score, 100% attendance, approved curriculum binder...",
+                    value: g.measure || "",
+                    onChange: ev => handleUpdateGoal(idx, "measure", ev.target.value)
+                  })
                 )
               )
             ),
-            db.competencies.map(comp =>
-              e("div", {
-                key: comp.id,
-                style: { padding: "0.85rem", border: "1px solid var(--border-color)", borderRadius: "8px", marginBottom: "0.75rem", background: "#f8fafc" }
-              },
-                e("div", { style: { display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "0.35rem" } },
-                  e("strong", null, comp.name),
-                  e("span", { className: "badge badge-success" }, comp.confidence)
+            e("div", { style: { display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: "0.5rem" } },
+              e("button", {
+                type: "button",
+                className: "btn btn-outline",
+                onClick: handleAddGoal
+              }, "+ Add Another Goal"),
+              e("span", { style: { fontSize: "0.82rem", color: "var(--text-subtle)" } },
+                `${goals.length} of 3 minimum goals registered`
+              )
+            )
+          )
+        ),
+
+        // Section 4: Connection to Postsecondary Goals
+        e("div", { className: "capstone-form-card" },
+          e("div", { className: "capstone-section-bar" },
+            e("h3", null,
+              e("span", null, "Connection to Postsecondary Goals:"),
+              e("span", { className: "subprompt" }, "(Explain in detail how this project aligns with your future academic, career, or personal ambitions).")
+            )
+          ),
+          e("div", { className: "capstone-section-content" },
+            e("div", { className: "form-group", style: { marginBottom: 0 } },
+              e("textarea", {
+                id: "capstone_postsecondaryConnection",
+                dataField: "postsecondaryConnection",
+                className: "form-control",
+                style: { minHeight: "95px" },
+                placeholder: "Explain in detail how this Capstone Experience connects directly with your intended college major, military pathway, career path, or personal growth ambitions...",
+                value: proposal.postsecondaryConnection || "",
+                onChange: ev => updateCapstoneField("postsecondaryConnection", ev.target.value)
+              })
+            )
+          )
+        ),
+
+        // Section 5: Timeline & Milestones (Month-by-Month Breakdown)
+        e("div", { className: "capstone-form-card" },
+          e("div", { className: "capstone-section-bar" },
+            e("h3", null,
+              e("span", null, "Timeline & Milestones:"),
+              e("span", { className: "subprompt" }, "(Month-by-Month breakdown of major project phases, including deadlines for key deliverables).")
+            ),
+            e("div", { style: { display: "flex", gap: "0.5rem" } },
+              e("button", {
+                type: "button",
+                className: "btn btn-outline",
+                style: { padding: "0.3rem 0.75rem", fontSize: "0.8rem", background: "#ffffff", borderColor: "#ffffff", color: "var(--uhs-navy)" },
+                onClick: handleAddTimelineMonth
+              }, "+ Add Month / Milestone"),
+              e("button", {
+                type: "button",
+                className: "btn btn-subtle",
+                style: { padding: "0.3rem 0.75rem", fontSize: "0.8rem" },
+                onClick: () => setCapstoneSubTab("timeline")
+              }, "Expand View →")
+            )
+          ),
+          e("div", { className: "capstone-section-content" },
+            e("p", { style: { fontSize: "0.85rem", color: "var(--text-muted)", marginBottom: "0.75rem" } },
+              "Structured month-by-month roadmap spanning senior year (August through May). Ensure key deliverable submission deadlines align with UHS milestones."
+            ),
+            e("div", { style: { overflowX: "auto" } },
+              e("table", { className: "timeline-table" },
+                e("thead", null,
+                  e("tr", null,
+                    e("th", { style: { width: "17%" } }, "Month / Timeframe"),
+                    e("th", { style: { width: "40%" } }, "Major Project Phase & Key Activities"),
+                    e("th", { style: { width: "37%" } }, "Key Deliverables & Deadlines"),
+                    e("th", { style: { width: "6%" } }, "")
+                  )
+                ),
+                e("tbody", null,
+                  timeline.map((item, idx) =>
+                    e("tr", { key: item.id || idx },
+                      e("td", null,
+                        e("span", { className: "timeline-month-badge" }, item.month),
+                        e("input", {
+                          type: "text",
+                          className: "form-control",
+                          style: { marginTop: "0.35rem", fontSize: "0.82rem", padding: "0.35rem 0.5rem" },
+                          value: item.month,
+                          onChange: ev => handleUpdateTimeline(idx, "month", ev.target.value)
+                        })
+                      ),
+                      e("td", null,
+                        e("textarea", {
+                          className: "form-control",
+                          style: { minHeight: "68px", fontSize: "0.85rem", lineHeight: "1.4" },
+                          placeholder: "Phase name and scheduled activities...",
+                          value: item.phase || "",
+                          onChange: ev => handleUpdateTimeline(idx, "phase", ev.target.value)
+                        })
+                      ),
+                      e("td", null,
+                        e("textarea", {
+                          className: "form-control",
+                          style: { minHeight: "68px", fontSize: "0.85rem", lineHeight: "1.4" },
+                          placeholder: "Specific deliverables, benchmarks, and target completion dates...",
+                          value: item.deliverables || "",
+                          onChange: ev => handleUpdateTimeline(idx, "deliverables", ev.target.value)
+                        })
+                      ),
+                      e("td", { style: { verticalAlign: "middle" } },
+                        timeline.length > 3
+                          ? e("button", {
+                              type: "button",
+                              className: "btn btn-subtle",
+                              style: { padding: "0.25rem 0.45rem", color: "var(--danger)", fontSize: "0.78rem" },
+                              title: "Remove this month",
+                              onClick: () => handleRemoveTimelineMonth(idx)
+                            }, "✕")
+                          : null
+                      )
+                    )
+                  )
+                )
+              )
+            ),
+            e("div", { style: { marginTop: "0.85rem", display: "flex", justifyContent: "space-between", alignItems: "center" } },
+              e("button", {
+                type: "button",
+                className: "btn btn-outline",
+                onClick: handleAddTimelineMonth
+              }, "+ Add Another Month Entry"),
+              e("span", { style: { fontSize: "0.82rem", color: "var(--text-subtle)" } },
+                `${timeline.length} monthly milestones scheduled`
+              )
+            )
+          )
+        ),
+
+        // Section 6: Mentor Support
+        e("div", { className: "capstone-form-card" },
+          e("div", { className: "capstone-section-bar" },
+            e("h3", null,
+              e("span", null, "Mentor Support:"),
+              e("span", { className: "subprompt" }, "List any mentors, their roles, and how they will support your project.")
+            )
+          ),
+          e("div", { className: "capstone-section-content" },
+            e("div", { className: "grid-2" },
+              e("div", { className: "form-group" },
+                e("div", { style: { display: "flex", alignItems: "center", gap: "0.4rem", marginBottom: "0.35rem" } },
+                  e("span", { className: "goal-badge" }, "UHS Mentor(s)"),
+                  e("strong", { style: { fontSize: "0.88rem" } }, "Faculty / School Staff Mentor")
                 ),
                 e("textarea", {
+                  id: "capstone_uhsMentor",
+                  dataField: "uhsMentor",
                   className: "form-control",
-                  style: { minHeight: "62px", fontSize: "0.84rem" },
-                  value: comp.aiInterpretation,
-                  onChange: ev => {
-                    const val = ev.target.value;
-                    setDb(p => ({
-                      ...p,
-                      competencies: p.competencies.map(c => c.id === comp.id ? { ...c, aiInterpretation: val } : c)
-                    }));
-                  }
+                  style: { minHeight: "95px" },
+                  placeholder: "List UHS mentor name(s), title/role, and how they will support your project (e.g. facility access, safety, school coordination)...",
+                  value: mentors.uhsMentor || "",
+                  onChange: ev => handleUpdateMentor("uhsMentor", ev.target.value)
+                })
+              ),
+              e("div", { className: "form-group" },
+                e("div", { style: { display: "flex", alignItems: "center", gap: "0.4rem", marginBottom: "0.35rem" } },
+                  e("span", { className: "goal-badge", style: { background: "#1e3a8a" } }, "External Mentor(s)"),
+                  e("strong", { style: { fontSize: "0.88rem" } }, "University / Community / Industry Partner")
+                ),
+                e("textarea", {
+                  id: "capstone_externalMentor",
+                  dataField: "externalMentor",
+                  className: "form-control",
+                  style: { minHeight: "95px" },
+                  placeholder: "List external mentor name(s), organization, professional role, and how they will guide your research or clinical fieldwork...",
+                  value: mentors.externalMentor || "",
+                  onChange: ev => handleUpdateMentor("externalMentor", ev.target.value)
                 })
               )
             )
           )
         ),
 
-        // Right Column: AI-Guided Reflection Conversation & Program of Studies Q&A
-        e("div", null,
-          e("div", { className: "card-panel" },
-            e("div", { className: "card-panel-header" },
-              e("div", null,
-                e("h3", null, "03 · ASK — AI Reflection & Program of Studies Guide"),
-                e("p", { style: { fontSize: "0.82rem", color: "var(--text-muted)" } },
-                  "Grounded in school-approved UHS resources. Official eligibility is computed by the Rule Engine."
-                )
-              ),
-              e("span", { className: "badge badge-navy" }, "Grounded AI")
-            ),
-            e("div", { className: "chat-window" },
-              db.conversations.map((msg, i) =>
-                e("div", { key: i, className: `chat-msg ${msg.sender}` },
-                  e("div", { className: "chat-sender" }, msg.sender === "ai" ? "Tiger Navigator Guide (AI + Rule Engine)" : "Pouncer (Student)"),
-                  e("div", { style: { whiteSpace: "pre-line" } }, msg.text)
-                )
-              )
-            ),
-            e("div", { style: { display: "flex", gap: "0.45rem", flexWrap: "wrap", marginBottom: "0.75rem" } },
-              [
-                "How do I qualify for DE College Algebra (MATH 1710)?",
-                "What do I still need for Senior Scholar status?",
-                "Connect my Lab shadowing to my Capstone proposal"
-              ].map((q, idx) =>
-                e("button", {
-                  key: idx,
-                  className: "btn btn-subtle",
-                  style: { fontSize: "0.76rem", padding: "0.35rem 0.65rem" },
-                  onClick: () => handleSendChat(q)
-                }, q)
-              )
-            ),
-            e("div", { style: { display: "flex", gap: "0.5rem" } },
-              e("input", {
-                type: "text",
-                className: "form-control",
-                placeholder: "Reflect on an experience or ask about UHS courses, pathways, or grants...",
-                value: chatInput,
-                onChange: ev => setChatInput(ev.target.value),
-                onKeyDown: ev => { if (ev.key === "Enter") handleSendChat(); }
-              }),
-              e("button", { className: "btn btn-primary", onClick: () => handleSendChat() }, "Send")
+        // Section 7: Deliverables
+        e("div", { className: "capstone-form-card" },
+          e("div", { className: "capstone-section-bar" },
+            e("h3", null,
+              e("span", null, "Deliverables:"),
+              e("span", { className: "subprompt" }, "All students are required to submit the 4 mandatory outputs below. Outline any additional tangible products.")
             )
           ),
-
-          // Experience Log & Add New Experience
-          e("div", { className: "card-panel" },
-            e("div", { className: "card-panel-header" },
-              e("h3", null, "Coursework, Internships & Work-Based Learning Log"),
-              e("span", { className: "badge badge-navy" }, `${db.experiences.length} Logged`)
-            ),
-            db.experiences.map(exp =>
-              e("div", {
-                key: exp.id,
-                style: { borderBottom: "1px solid var(--border-color)", paddingBottom: "0.85rem", marginBottom: "0.85rem" }
-              },
-                e("div", { style: { display: "flex", justifyContent: "space-between", alignItems: "center" } },
-                  e("strong", { style: { fontSize: "0.94rem" } }, exp.title),
-                  e("span", { className: "badge badge-navy" }, `${exp.hours} hrs · ${exp.type}`)
+          e("div", { className: "capstone-section-content" },
+            e("div", { style: { marginBottom: "1rem" } },
+              e("strong", { style: { fontSize: "0.88rem", display: "block", marginBottom: "0.5rem" } },
+                "Mandatory University High School Capstone Deliverables (Required of All Students):"
+              ),
+              e("div", { className: "deliverables-checklist" },
+                e("div", { className: "deliverable-box" },
+                  e("span", null, "✓"),
+                  e("div", null,
+                    e("div", null, "1. Capstone Proposal"),
+                    e("small", { style: { color: "#15803d", fontWeight: "normal" } }, "Approved & signed by mentor")
+                  )
                 ),
-                e("p", { style: { fontSize: "0.84rem", color: "var(--text-muted)", margin: "0.35rem 0" } }, exp.reflection),
-                e("div", { style: { display: "flex", gap: "0.35rem", flexWrap: "wrap" } },
-                  exp.competencies.map((tag, i) =>
-                    e("span", { key: i, className: "badge badge-success" }, tag)
+                e("div", { className: "deliverable-box" },
+                  e("span", null, "✓"),
+                  e("div", null,
+                    e("div", null, "2. Weekly Reflections"),
+                    e("small", { style: { color: "#15803d", fontWeight: "normal" } }, "Logged in Tiger Navigator")
+                  )
+                ),
+                e("div", { className: "deliverable-box" },
+                  e("span", null, "✓"),
+                  e("div", null,
+                    e("div", null, "3. Capstone Poster"),
+                    e("small", { style: { color: "#15803d", fontWeight: "normal" } }, "Showcased at Senior Defense")
+                  )
+                ),
+                e("div", { className: "deliverable-box" },
+                  e("span", null, "✓"),
+                  e("div", null,
+                    e("div", null, "4. Recorded Slidedeck"),
+                    e("small", { style: { color: "#15803d", fontWeight: "normal" } }, "Oral defense presentation")
                   )
                 )
               )
             ),
-            e("form", { onSubmit: handleAddExperience, style: { marginTop: "1rem", paddingTop: "0.75rem" } },
-              e("h4", { style: { fontSize: "0.92rem", marginBottom: "0.6rem" } }, "+ Log New Experience or Capstone Activity"),
-              e("div", { className: "grid-2" },
+            e("div", { className: "form-group", style: { marginBottom: 0 } },
+              e("label", null, "Additional Tangible Outputs & Products:"),
+              e("p", { style: { fontSize: "0.82rem", color: "var(--text-subtle)", margin: "0 0 0.4rem 0" } },
+                "In this section, outline any additional tangible outputs you will produce (e.g., research paper, product prototype, event, recording, clinic manual, etc):"
+              ),
+              e("textarea", {
+                id: "capstone_additionalOutputs",
+                dataField: "additionalOutputs",
+                className: "form-control",
+                style: { minHeight: "90px" },
+                placeholder: "Outline any additional tangible outputs (e.g., published manual, clinic video drills, data dashboard, prototype)...",
+                value: (proposal.deliverables && proposal.deliverables.additionalOutputs) || "",
+                onChange: ev => updateCapstoneField("deliverables", {
+                  ...proposal.deliverables,
+                  additionalOutputs: ev.target.value
+                })
+              })
+            )
+          )
+        ),
+
+        // Section 8: Resource Needs
+        e("div", { className: "capstone-form-card" },
+          e("div", { className: "capstone-section-bar" },
+            e("h3", null,
+              e("span", null, "Resource Needs:"),
+              e("span", { className: "subprompt" }, "Identify (in detail) any materials, funding, or external support required for your project. Include anticipated costs and potential ways to secure the needed resources.")
+            )
+          ),
+          e("div", { className: "capstone-section-content" },
+            e("div", { className: "form-group", style: { marginBottom: 0 } },
+              e("textarea", {
+                id: "capstone_resourceNeeds",
+                dataField: "resourceNeeds",
+                className: "form-control",
+                style: { minHeight: "95px" },
+                placeholder: "Detail all equipment, printed materials, funding requirements, anticipated budget, and how resources will be secured...",
+                value: proposal.resourceNeeds || "",
+                onChange: ev => updateCapstoneField("resourceNeeds", ev.target.value)
+              })
+            )
+          )
+        ),
+
+        // PDF PAGE 2: Transportation, Parental Approval, and Additional Info
+        // Section 9: Transportation
+        e("div", { className: "capstone-form-card" },
+          e("div", { className: "capstone-section-bar" },
+            e("h3", null,
+              e("span", null, "Transportation:"),
+              e("span", { className: "subprompt" }, "Do you have access to the transportation you will need for this Capstone Experience?")
+            ),
+            e("span", { className: "badge badge-navy", style: { background: "rgba(255,255,255,0.2)", color: "#fff" } }, "PDF Page 2 Section")
+          ),
+          e("div", { className: "capstone-section-content" },
+            e("div", { className: "transport-container" },
+              // Left Column: Options
+              e("div", null,
+                e("div", {
+                  className: `transport-option ${transport.mode === "self" ? "selected" : ""}`,
+                  onClick: () => handleUpdateTransport("self")
+                },
+                  e("label", { className: "radio-label" },
+                    e("input", {
+                      type: "radio",
+                      name: "transport_mode",
+                      checked: transport.mode === "self",
+                      onChange: () => handleUpdateTransport("self")
+                    }),
+                    e("strong", null, "Yes, I will transport myself. I have:")
+                  ),
+                  e("div", { className: "transport-suboptions" },
+                    e("label", { style: { display: "flex", alignItems: "center", gap: "0.45rem", cursor: "pointer" } },
+                      e("input", {
+                        type: "checkbox",
+                        checked: Boolean(transport.selfCredentials && transport.selfCredentials.driversLicense),
+                        onChange: () => handleToggleTransportCredential("driversLicense")
+                      }),
+                      "Driver’s license"
+                    ),
+                    e("label", { style: { display: "flex", alignItems: "center", gap: "0.45rem", cursor: "pointer" } },
+                      e("input", {
+                        type: "checkbox",
+                        checked: Boolean(transport.selfCredentials && transport.selfCredentials.vehicleAccess),
+                        onChange: () => handleToggleTransportCredential("vehicleAccess")
+                      }),
+                      "Vehicle access"
+                    ),
+                    e("label", { style: { display: "flex", alignItems: "center", gap: "0.45rem", cursor: "pointer" } },
+                      e("input", {
+                        type: "checkbox",
+                        checked: Boolean(transport.selfCredentials && transport.selfCredentials.autoInsurance),
+                        onChange: () => handleToggleTransportCredential("autoInsurance")
+                      }),
+                      "Auto insurance"
+                    )
+                  )
+                ),
+                e("div", {
+                  className: `transport-option ${transport.mode === "parent" ? "selected" : ""}`,
+                  onClick: () => handleUpdateTransport("parent")
+                },
+                  e("label", { className: "radio-label" },
+                    e("input", {
+                      type: "radio",
+                      name: "transport_mode",
+                      checked: transport.mode === "parent",
+                      onChange: () => handleUpdateTransport("parent")
+                    }),
+                    "Yes (My parent is available to transport me)."
+                  )
+                ),
+                e("div", {
+                  className: `transport-option ${transport.mode === "none" ? "selected" : ""}`,
+                  onClick: () => handleUpdateTransport("none")
+                },
+                  e("label", { className: "radio-label" },
+                    e("input", {
+                      type: "radio",
+                      name: "transport_mode",
+                      checked: transport.mode === "none",
+                      onChange: () => handleUpdateTransport("none")
+                    }),
+                    "No additional transportation is needed. (Ex: On-campus or online internship)."
+                  )
+                ),
+                e("div", {
+                  className: `transport-option ${transport.mode === "other" ? "selected" : ""}`,
+                  onClick: () => handleUpdateTransport("other")
+                },
+                  e("label", { className: "radio-label" },
+                    e("input", {
+                      type: "radio",
+                      name: "transport_mode",
+                      checked: transport.mode === "other",
+                      onChange: () => handleUpdateTransport("other")
+                    }),
+                    "Other (Provide Additional Info in provided box)."
+                  )
+                )
+              ),
+
+              // Right Column: Additional Transportation Info
+              e("div", null,
+                e("label", { style: { fontWeight: "700", fontSize: "0.85rem", display: "block", marginBottom: "0.4rem" } },
+                  "Additional Transportation Info:"
+                ),
+                e("textarea", {
+                  id: "capstone_transportInfo",
+                  dataField: "transportInfo",
+                  className: "form-control",
+                  style: { minHeight: "155px" },
+                  placeholder: "Provide additional transportation details, driving schedule, UofM campus parking, or transit notes...",
+                  value: transport.additionalInfo || "",
+                  onChange: ev => handleUpdateTransportInfo(ev.target.value)
+                })
+              )
+            )
+          )
+        ),
+
+        // Section 10: Parental Approval
+        e("div", { className: "capstone-form-card" },
+          e("div", { className: "capstone-section-bar" },
+            e("h3", null,
+              e("span", null, "Parental Approval:"),
+              e("span", { className: "subprompt" }, "I have thoroughly communicated with my parent/guardian regarding my intended Capstone Experience. They are in support and intend to sign the Capstone Permission Form.")
+            )
+          ),
+          e("div", { className: "capstone-section-content" },
+            e("div", { className: "radio-group" },
+              e("label", { className: "radio-label" },
+                e("input", {
+                  type: "radio",
+                  name: "parental_approval",
+                  checked: parentalApproval.status === "Yes",
+                  onChange: () => handleUpdateParentApproval("Yes", "")
+                }),
+                e("span", { style: { fontWeight: "600" } }, "Yes")
+              ),
+              e("label", { className: "radio-label" },
+                e("input", {
+                  type: "radio",
+                  name: "parental_approval",
+                  checked: parentalApproval.status === "No",
+                  onChange: () => handleUpdateParentApproval("No", "")
+                }),
+                e("span", { style: { fontWeight: "600" } }, "No")
+              ),
+              e("label", { className: "radio-label" },
+                e("input", {
+                  type: "radio",
+                  name: "parental_approval",
+                  checked: parentalApproval.status === "Other",
+                  onChange: () => handleUpdateParentApproval("Other", parentalApproval.explanation || "")
+                }),
+                e("span", { style: { fontWeight: "600" } }, "Other (please explain):")
+              )
+            ),
+            parentalApproval.status === "Other" &&
+              e("div", { style: { marginTop: "0.85rem" } },
                 e("input", {
                   type: "text",
                   className: "form-control",
-                  placeholder: "Activity or Internship Title...",
-                  value: newExpTitle,
-                  onChange: ev => setNewExpTitle(ev.target.value)
-                }),
-                e("select", {
-                  className: "form-control",
-                  value: newExpType,
-                  onChange: ev => setNewExpType(ev.target.value)
-                },
-                  e("option", { value: "Capstone Activity" }, "Capstone Activity"),
-                  e("option", { value: "Internship / Work-Based Learning" }, "Internship / Work-Based Learning"),
-                  e("option", { value: "Community Service" }, "Community Service (Counts toward Senior Scholar)")
+                  placeholder: "Please explain your parental approval status or scheduled meeting...",
+                  value: parentalApproval.explanation || "",
+                  onChange: ev => handleUpdateParentApproval("Other", ev.target.value)
+                })
+              )
+          )
+        ),
+
+        // Section 11: Additional Information
+        e("div", { className: "capstone-form-card" },
+          e("div", { className: "capstone-section-bar" },
+            e("h3", null,
+              e("span", null, "Additional Information:"),
+              e("span", { className: "subprompt" }, "Below, please include any additional materials or explanation that will help us understand your proposed Capstone Experience.")
+            )
+          ),
+          e("div", { className: "capstone-section-content" },
+            e("div", { className: "form-group", style: { marginBottom: 0 } },
+              e("label", null, "Additional Info:"),
+              e("textarea", {
+                id: "capstone_additionalInfo",
+                dataField: "additionalInfo",
+                className: "form-control",
+                style: { minHeight: "95px" },
+                placeholder: "Include any supplementary explanations, athletic scheduling considerations, safety protocols, or notes for Counselor Carter...",
+                value: proposal.additionalInfo || "",
+                onChange: ev => updateCapstoneField("additionalInfo", ev.target.value)
+              })
+            )
+          )
+        ),
+
+        // Proposal Action Bar
+        e("div", { style: { display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "1rem", marginTop: "1rem", padding: "1rem 0" } },
+          e("div", { style: { display: "flex", gap: "0.75rem" } },
+            e("button", {
+              type: "button",
+              className: "btn btn-primary",
+              onClick: () => {
+                showNotification("Capstone proposal changes saved successfully to local browser state!");
+              }
+            }, "💾 Save Proposal Draft"),
+            e("button", {
+              type: "button",
+              className: "btn btn-outline",
+              onClick: () => window.print()
+            }, "🖨️ Print / Export PDF Form")
+          ),
+          e("div", { style: { fontSize: "0.85rem", color: "var(--text-subtle)" } },
+            `Last saved: ${proposal.lastUpdated || "Nov 13, 2026"} · Status: `,
+            e("span", { className: "badge badge-success" }, proposal.submissionStatus || "Draft In Progress")
+          )
+        )
+      );
+    }
+
+    // Sub-render 2: Month-by-Month Dedicated Timeline View
+    function renderTimelineView() {
+      return e("div", { className: "card-panel" },
+        e("div", { className: "card-panel-header" },
+          e("div", null,
+            e("h3", null, "Month-by-Month Capstone Timeline & Milestone Roadmap"),
+            e("p", { style: { fontSize: "0.85rem", color: "var(--text-muted)" } },
+              "Detailed monthly breakdown tracking the lifecycle of your Capstone Experience from initial approval through Senior Defense."
+            )
+          ),
+          e("div", { style: { display: "flex", gap: "0.5rem" } },
+            e("button", {
+              type: "button",
+              className: "btn btn-primary",
+              onClick: handleAddTimelineMonth
+            }, "+ Add Month Entry"),
+            e("button", {
+              type: "button",
+              className: "btn btn-outline",
+              onClick: () => setCapstoneSubTab("proposal")
+            }, "← Back to Proposal Form")
+          )
+        ),
+        e("div", { style: { display: "flex", flexDirection: "column", gap: "1rem" } },
+          timeline.map((item, idx) =>
+            e("div", {
+              key: item.id || idx,
+              style: {
+                background: "#f8fafc",
+                border: "1px solid var(--border-color)",
+                borderLeft: "5px solid var(--uhs-navy)",
+                borderRadius: "var(--radius-md)",
+                padding: "1.1rem"
+              }
+            },
+              e("div", { style: { display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "0.6rem" } },
+                e("div", { style: { display: "flex", alignItems: "center", gap: "0.65rem" } },
+                  e("span", { className: "timeline-month-badge", style: { fontSize: "0.88rem", padding: "0.3rem 0.75rem" } }, item.month),
+                  e("strong", { style: { fontSize: "1rem" } }, item.phase ? item.phase.split("\n")[0] : `Milestone #${idx + 1}`)
+                ),
+                timeline.length > 3 &&
+                  e("button", {
+                    type: "button",
+                    className: "btn btn-subtle",
+                    style: { color: "var(--danger)", padding: "0.2rem 0.6rem", fontSize: "0.78rem" },
+                    onClick: () => handleRemoveTimelineMonth(idx)
+                  }, "Remove Month")
+              ),
+              e("div", { className: "grid-2" },
+                e("div", { className: "form-group" },
+                  e("label", null, "Major Project Phase & Key Activities:"),
+                  e("textarea", {
+                    className: "form-control",
+                    style: { minHeight: "75px" },
+                    value: item.phase || "",
+                    onChange: ev => handleUpdateTimeline(idx, "phase", ev.target.value)
+                  })
+                ),
+                e("div", { className: "form-group" },
+                  e("label", null, "Key Deliverables & Submission Deadlines:"),
+                  e("textarea", {
+                    className: "form-control",
+                    style: { minHeight: "75px" },
+                    value: item.deliverables || "",
+                    onChange: ev => handleUpdateTimeline(idx, "deliverables", ev.target.value)
+                  })
                 )
+              )
+            )
+          )
+        ),
+        e("div", { style: { marginTop: "1.25rem", textAlign: "center" } },
+          e("button", {
+            type: "button",
+            className: "btn btn-outline",
+            onClick: handleAddTimelineMonth
+          }, "+ Add Another Month Entry to Roadmap")
+        )
+      );
+    }
+
+    // Sub-render 3: Weekly Reflections & Experience Log (Required Deliverable #2)
+    function renderReflectionsLog() {
+      return e("div", { className: "card-panel" },
+        e("div", { className: "card-panel-header" },
+          e("div", null,
+            e("h3", null, "Weekly Capstone Reflections & Fieldwork Log (Deliverable #2)"),
+            e("p", { style: { fontSize: "0.85rem", color: "var(--text-muted)" } },
+              "All UHS Capstone candidates are required to log weekly reflections. Hours also count toward Senior Scholar service & fieldwork requirements."
+            )
+          ),
+          e("span", { className: "badge badge-navy" }, `${db.experiences.length} Logged Entries`)
+        ),
+        e("div", { style: { marginBottom: "1.5rem" } },
+          db.experiences.map(exp =>
+            e("div", {
+              key: exp.id,
+              style: { borderBottom: "1px solid var(--border-color)", paddingBottom: "1rem", marginBottom: "1rem" }
+            },
+              e("div", { style: { display: "flex", justifyContent: "space-between", alignItems: "center" } },
+                e("strong", { style: { fontSize: "0.98rem" } }, exp.title),
+                e("span", { className: "badge badge-navy" }, `${exp.hours} hrs · ${exp.type}`)
+              ),
+              e("p", { style: { fontSize: "0.88rem", color: "var(--text-muted)", margin: "0.45rem 0" } }, exp.reflection),
+              e("div", { style: { display: "flex", gap: "0.35rem", flexWrap: "wrap" } },
+                exp.competencies.map((tag, i) =>
+                  e("span", { key: i, className: "badge badge-success" }, tag)
+                )
+              )
+            )
+          )
+        ),
+        e("form", { onSubmit: handleAddExperience, style: { background: "#f8fafc", padding: "1.2rem", borderRadius: "var(--radius-md)", border: "1px solid var(--border-color)" } },
+          e("h4", { style: { fontSize: "0.95rem", marginBottom: "0.75rem" } }, "+ Log New Weekly Reflection or Capstone Activity"),
+          e("div", { className: "grid-3" },
+            e("div", { className: "form-group" },
+              e("label", null, "Activity or Milestone Title"),
+              e("input", {
+                type: "text",
+                className: "form-control",
+                placeholder: "e.g., Week 4 Dynamic Warm-up Session with JV...",
+                value: newExpTitle,
+                onChange: ev => setNewExpTitle(ev.target.value)
+              })
+            ),
+            e("div", { className: "form-group" },
+              e("label", null, "Activity Type"),
+              e("select", {
+                className: "form-control",
+                value: newExpType,
+                onChange: ev => setNewExpType(ev.target.value)
+              },
+                e("option", { value: "Capstone Activity" }, "Capstone Activity / Fieldwork"),
+                e("option", { value: "Internship / Work-Based Learning" }, "Internship / Work-Based Learning"),
+                e("option", { value: "Community Service" }, "Community Service (Counts toward Senior Scholar)")
+              )
+            ),
+            e("div", { className: "form-group" },
+              e("label", null, "Hours Spent"),
+              e("input", {
+                type: "number",
+                min: "1",
+                max: "100",
+                className: "form-control",
+                value: newExpHours,
+                onChange: ev => setNewExpHours(ev.target.value)
+              })
+            )
+          ),
+          e("div", { className: "form-group" },
+            e("label", null, "Weekly Reflection (What occurred, key learnings, and challenges addressed):"),
+            e("textarea", {
+              className: "form-control",
+              style: { minHeight: "75px" },
+              placeholder: "Reflect on this week's progress, mentor feedback, and how it aligns with your project goals...",
+              value: newExpReflection,
+              onChange: ev => setNewExpReflection(ev.target.value)
+            })
+          ),
+          e("button", { type: "submit", className: "btn btn-primary" }, "Save Weekly Reflection & Extract Competencies")
+        )
+      );
+    }
+
+    // Sub-render 4: AI Capstone Advisor & Grounded Q&A
+    function renderAiAdvisor() {
+      return e("div", { className: "grid-2" },
+        // Left: Chat Window
+        e("div", { className: "card-panel" },
+          e("div", { className: "card-panel-header" },
+            e("div", null,
+              e("h3", null, "AI Capstone Advisor & Program Guide"),
+              e("p", { style: { fontSize: "0.82rem", color: "var(--text-muted)" } },
+                "Grounded in school-approved UHS resources, rubrics, and the Senior Scholar criteria."
+              )
+            ),
+            e("span", { className: "badge badge-navy" }, "Grounded AI")
+          ),
+          e("div", { className: "chat-window" },
+            db.conversations.map((msg, i) =>
+              e("div", { key: i, className: `chat-msg ${msg.sender}` },
+                e("div", { className: "chat-sender" }, msg.sender === "ai" ? "Tiger Navigator Guide (AI + Rule Engine)" : "Pouncer (Student)"),
+                e("div", { style: { whiteSpace: "pre-line" } }, msg.text)
+              )
+            )
+          ),
+          e("div", { style: { display: "flex", gap: "0.45rem", flexWrap: "wrap", marginBottom: "0.75rem" } },
+            [
+              "Connect my Lab shadowing to my Capstone proposal",
+              "How do I frame my Capstone deliverables for Senior Scholar defense?",
+              "What do I still need for Senior Scholar status?"
+            ].map((q, idx) =>
+              e("button", {
+                key: idx,
+                className: "btn btn-subtle",
+                style: { fontSize: "0.76rem", padding: "0.35rem 0.65rem" },
+                onClick: () => handleSendChat(q)
+              }, q)
+            )
+          ),
+          e("div", { style: { display: "flex", gap: "0.5rem" } },
+            e("input", {
+              type: "text",
+              className: "form-control",
+              placeholder: "Ask about Capstone goals, rubrics, or connections to college majors...",
+              value: chatInput,
+              onChange: ev => setChatInput(ev.target.value),
+              onKeyDown: ev => { if (ev.key === "Enter") handleSendChat(); }
+            }),
+            e("button", { className: "btn btn-primary", onClick: () => handleSendChat() }, "Send")
+          )
+        ),
+        // Right: AI Competency Review
+        e("div", { className: "card-panel" },
+          e("div", { className: "card-panel-header" },
+            e("div", null,
+              e("h3", null, "AI-Recognized Strengths & Competencies"),
+              e("p", { style: { fontSize: "0.82rem", color: "var(--text-muted)" } },
+                "Review and edit AI-generated interpretations of your recurring competencies from reflections."
+              )
+            )
+          ),
+          db.competencies.map(comp =>
+            e("div", {
+              key: comp.id,
+              style: { padding: "0.85rem", border: "1px solid var(--border-color)", borderRadius: "8px", marginBottom: "0.75rem", background: "#f8fafc" }
+            },
+              e("div", { style: { display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "0.35rem" } },
+                e("strong", null, comp.name),
+                e("span", { className: "badge badge-success" }, comp.confidence)
               ),
               e("textarea", {
                 className: "form-control",
-                style: { marginTop: "0.6rem", minHeight: "65px" },
-                placeholder: "What did you learn or accomplish during this experience?",
-                value: newExpReflection,
-                onChange: ev => setNewExpReflection(ev.target.value)
-              }),
-              e("button", { type: "submit", className: "btn btn-primary", style: { marginTop: "0.6rem" } }, "Save Experience & Extract Competencies")
+                style: { minHeight: "62px", fontSize: "0.84rem" },
+                value: comp.aiInterpretation,
+                onChange: ev => {
+                  const val = ev.target.value;
+                  setDb(p => ({
+                    ...p,
+                    competencies: p.competencies.map(c => c.id === comp.id ? { ...c, aiInterpretation: val } : c)
+                  }));
+                }
+              })
             )
           )
         )
-      )
+      );
+    }
+
+    return e("div", { className: "capstone-container" },
+      // Top Section Header
+      e("div", { className: "section-header" },
+        e("div", null,
+          e("h2", { style: { fontSize: "1.65rem" } }, "Senior Capstone Experience Proposal"),
+          e("p", { style: { color: "var(--text-muted)", fontSize: "0.92rem" } },
+            "Official University High School Proposal Form, Month-by-Month Timeline & Fieldwork Planning"
+          )
+        ),
+        e("div", { style: { display: "flex", gap: "0.5rem", flexWrap: "wrap" } },
+          e("button", {
+            type: "button",
+            className: "btn btn-outline no-print",
+            onClick: () => window.print()
+          }, "🖨️ Print / Export PDF"),
+          e("button", {
+            type: "button",
+            className: "btn btn-primary no-print",
+            onClick: () => showNotification("Capstone proposal changes saved successfully!")
+          }, "💾 Save Draft")
+        )
+      ),
+
+      // Google Single Sign-On Info Banner
+      e("div", { className: "sso-pill-banner" },
+        e("div", { className: "sso-pill-left" },
+          e("span", { className: "sso-google-icon" }, "G"),
+          e("div", null,
+            e("div", { style: { fontWeight: "700", fontSize: "0.92rem", color: "#1e3a8a" } },
+              "Google Workspace Single Sign-On Active — Verified Student: Pouncer (Class of 2027)"
+            ),
+            e("div", { style: { fontSize: "0.8rem", color: "#475569" } },
+              "Student Name field is omitted because your identity is automatically authenticated via Google SSO (u_pouncer_2027@uhs.memphis.edu)."
+            )
+          )
+        ),
+        e("span", { className: "badge badge-navy", style: { background: "#dbeafe", color: "#1d4ed8" } },
+          "✓ SSO Authenticated"
+        )
+      ),
+
+      // Sub-Navigation Tabs
+      e("div", { className: "capstone-subnav no-print" },
+        e("button", {
+          type: "button",
+          className: `capstone-subnav-btn ${capstoneSubTab === "proposal" ? "active" : ""}`,
+          onClick: () => setCapstoneSubTab("proposal")
+        }, "Official Proposal Form (PDF Rework)"),
+        e("button", {
+          type: "button",
+          className: `capstone-subnav-btn ${capstoneSubTab === "timeline" ? "active" : ""}`,
+          onClick: () => setCapstoneSubTab("timeline")
+        }, `Month-by-Month Timeline (${timeline.length} Months)`),
+        e("button", {
+          type: "button",
+          className: `capstone-subnav-btn ${capstoneSubTab === "reflections" ? "active" : ""}`,
+          onClick: () => setCapstoneSubTab("reflections")
+        }, `Weekly Reflections & Log (${db.experiences.length})`),
+        e("button", {
+          type: "button",
+          className: `capstone-subnav-btn ${capstoneSubTab === "ai_guide" ? "active" : ""}`,
+          onClick: () => setCapstoneSubTab("ai_guide")
+        }, "AI Capstone Advisor & Competencies")
+      ),
+
+      // Render Selected View
+      capstoneSubTab === "proposal" && renderOfficialProposalForm(),
+      capstoneSubTab === "timeline" && renderTimelineView(),
+      capstoneSubTab === "reflections" && renderReflectionsLog(),
+      capstoneSubTab === "ai_guide" && renderAiAdvisor()
     );
   }
 
